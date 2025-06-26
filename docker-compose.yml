@@ -1,0 +1,14 @@
+---
+services:
+  ubuntu-test:
+    image: ubuntu:latest
+    container_name: ubuntu-test
+    hostname: ubuntu-test
+    volumes:
+      # Persist user configurations
+      - ./scripts:/scripts
+
+    # This can serve as a test target for your IaC scripts
+    labels:
+      - "dev.environment=test"
+      - "dev.purpose=deployment-target"
