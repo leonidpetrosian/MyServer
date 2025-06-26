@@ -4,9 +4,10 @@ services:
     image: ubuntu:latest
     container_name: ubuntu-test
     hostname: ubuntu-test
+    user: root
     volumes:
       # Persist user configurations
-      - ./scripts:/scripts
+      - ./scripts:/home/ubuntu/scripts
 
     # This can serve as a test target for your IaC scripts
     labels:
