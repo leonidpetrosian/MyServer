@@ -13,3 +13,5 @@ npm install -g \
   serverless \
   prettier \
   eslint
+
+# TODO: Install nvm (Node Version Manager) and npx - Optional
